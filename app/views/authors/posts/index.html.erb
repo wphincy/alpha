@@ -1,0 +1,134 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% provide(:page_title, 'All Posts') %>
+
+
+<h4 style="color:red;" id="notice"><%= notice %></h4>
+
+    <div class="jumbotron jumbotron-fluid">
+
+        <video autoplay  muted >
+            <source src="https://s3-us-west-1.amazonaws.com/photogallery1/Shelterjumbo" type="video/mp4">
+            </video>
+                <div class="container text-white">
+
+
+                  <body background="https://s3-us-west-1.amazonaws.com/photogallery1/bk1.jpg">
+                  </body>
+
+
+                  <center><h1 class="display-4" style="color:white;">Welcome To The HincyGallery!</h1></center>
+                    <br><br><br><br>
+                </div>
+      </div>
+<!-- /.container -->
+
+<!-- /.jumbotron -->
+
+
+
+<div class="row">
+<div>
+
+<%= link_to 'New Photographs', new_authors_post_path, class: 'btn btn-primary btn-lg' %>
+
+<br><br>
+
+  <h3 style="color:yellow;"><center><u>Listing Of Aerial Photographs</u></center></h3>
+      <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <table class="table table-striped" BORDER="10px solid red" CELLPADDING="1" >
+        <tr>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Catagory: </h5>
+          </th>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Name: </h5>
+          </th>
+
+
+
+
+          <th>
+            <h5 style="color:red; " colspan=5> Photographs: </h5>
+          </th>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Comments: </h5>
+          </th>
+
+          
+
+          <th>
+            <h5 style="color:red; " colspan=5> Published: </h5>
+          </th>
+
+
+
+          </tr>
+
+
+
+          <%= render @posts %>
+
+
+
+
+      </table>
+
+
+      <br>
+
+
+
+
+      <br>
+      <br>
+
+
+</div>
+</div>

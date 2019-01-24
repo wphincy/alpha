@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title><%= yield(:page_title) %> | HincyGallery</title>
+
+  <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <link href="https://fonts.googleapis.com/css?family=Faster+One|Marck+Script|Monoton|Pinyon+Script|Playball|Vast+Shadow" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Faster+One|Marck+Script|Monoton|Pinyon+Script|Playball" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Faster+One|Monoton" rel="stylesheet">
+
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!-- Bootstrap core CSS -->
+                <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+                <!-- Custom styles for this template -->
+                <link href="css/thumbnail-gallery.css" rel="stylesheet">
+
+
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <%= render 'layouts/navbar' %>
+
+    <div class="container <%= controller_name %> <%= action_name %>">
+
+
+
+    <%= yield %>
+    </div>
+
+
+  </body>
+</html>

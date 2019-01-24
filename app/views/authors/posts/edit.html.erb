@@ -1,0 +1,28 @@
+
+
+<% provide(:page_title, 'Edit Photographs') %>
+
+
+<h4 style="color:yellow;" id="notice"><%= notice %></h4>
+
+<h2><%= link_to 'Show',  authors_post_path, class: 'btn btn-sm btn-primary' %> /
+<%= link_to 'Admin', authors_posts_path, class: 'btn btn-sm btn-primary'%></h2>
+
+
+
+
+<div class="container text-white ">
+
+
+
+
+<center><h1 style="color:yellow;">Updating Data</h1></center>
+
+</div>
+
+
+
+
+
+
+<%= render 'form', post: @post, url: authors_post_url(@post) %>

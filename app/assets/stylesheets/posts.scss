@@ -1,0 +1,201 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* direct_uploads.css */
+
+.direct-upload {
+  display: inline-block;
+  position: relative;
+  padding: 2px 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 10 10px 10px 10;
+  border-style: solid;
+    border-color: coral;
+
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.direct-upload--pending {
+  opacity: 0.6;
+}
+
+.direct-upload__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background: #0076ff;
+  transition: width 120ms ease-out, opacity 60ms 60ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+.direct-upload--complete .direct-upload__progress {
+  opacity: 0.4;
+}
+
+.direct-upload--error {
+  border-color: red;
+}
+
+input[type=file][data-direct-upload-url][disabled] {
+  display: none;
+}
+
+
+
+
+
+
+.posts.index {
+
+	.card {
+
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid red;
+		height: 400px;
+		margin-bottom: 20px;
+		background-color: #D3D3D3;
+		.card-topper {
+	    	height: 200px;
+	    	width: 100%;
+	    	background-size: cover;
+	    	background-position: center;
+		}
+
+		.card-block {
+			padding: 10px;
+			}
+
+		.card-title {
+			font-size: 1.3rem;
+			margin-bottom: 0.5rem;
+			a {
+			color: red;
+			text-decoration: none;
+			}
+		}
+
+		.publish-date: {
+			font-size: 0.8rem;
+			color: #787878;
+			font-weight: 300;
+			margin-top: 0.3rem;
+		}
+
+
+
+.card-text {
+	font-size: 0.9rem;
+	color: black;
+}
+
+	}
+
+
+    	}
+
+
+
+
+
+
+
+
+.posts.edit, .posts.new {
+	.card {
+
+
+	.list-group-item {
+	padding: 20px;
+	border-left: -20;
+	border-right: 0;
+	input[type='text'], textarea {
+		font-size: 14px;
+		background-color: #D3D3D3;
+	}
+	textarea {
+	height: 100px;
+	}
+	&:last-child {
+	background-color: #D3D3D3;
+	}
+	}
+	}
+}
+
+	.card-header {
+		text-align: center;
+		font-weight: bold;
+}
+
+
+.posts.show
+
+{
+	text-align: center;
+
+	.author-bio {
+	background-color: white;
+	padding: 15px 45px;
+	margin: 30px 0;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+
+	img {
+	border-radius: 50%;
+	}
+
+	img, h4 {
+	margin-bottom: 10px
+	}
+
+	h4 {
+	font-weight: bold;
+	font-size: 22px;
+	}
+
+	h6 {
+	font-weight: 300;
+	font-size: 16px;
+	}
+
+	}
+}
+
+
+
+.card-block {
+	padding: 10px;
+
+	text-align: center;
+	padding: 10px 20px 50px 30px;
+}
+
+.card-footer {
+
+}
+
+@media screen and (min-width: 34em) {
+	.posts.index .card {
+	height: 440px;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.posts.index .card {
+	height: 420px;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	.posts.index .card {
+	height: 415px;
+	}
+}

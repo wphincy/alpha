@@ -1,0 +1,23 @@
+
+<tr>
+  <td><h5 style="color:white;"><%= post.catagory %></h5></td>
+  <td><h5 style="color:yellow;"><%= link_to post.title, post_path(post) %></h5></td>
+
+  <td><h5 style="color:white;"><%= post.numphoto %> </h5></td>
+  <td><h5 style="color:white;"><%= post.comments %></h5></td>
+   <td><h4 style="color:blue;"><%= raw post.tags.map { |t| link_to t.name, posts_path(tag: t.name)}.join(',')%></h4></td>
+
+<td><h5 style="color:white;" class="published_date"><%= post.display_day_published %></h5></td>
+
+
+
+
+
+
+
+
+
+
+
+
+  </tr>

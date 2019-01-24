@@ -1,0 +1,75 @@
+
+<%= form_for(post, url: url) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <body background="https://s3-us-west-1.amazonaws.com/photogallery1/bk1.jpg">
+  </body>
+
+    <div class="field">
+      <h4 style="color:red;" <%= form.label :Catagory %></h4>
+      <%= form.text_field :catagory, class: "form-control" %>
+    </div><br>
+
+  <div class="field">
+    <h4 style="color:red;" <%= form.label :Title %></h4>
+    <%= form.text_field :title, class: "form-control" %>
+  </div><br>
+
+  <div class="field">
+    <h4 style="color:red;" <%= form.label :Description %></h4>
+    <%= form.text_area :description, class: "form-control" %>
+  </div><br>
+
+  <div class="field">
+    <h4 style="color:red;" <%= form.label :Comments %></h4>
+    <%= form.text_area :comments, class: "form-control" %>
+  </div><br>
+
+
+
+  <div class="field">
+    <h4 style="color:red;" <%= form.label :Number_Of_Photographs %></h4>
+    <%= form.text_area :numphoto, class: "form-control" %>
+  </div><br>
+
+  
+
+  <div class="field">
+      <h4 style="color:red;" <%= form.label :Keyword %></h4>
+      <%= form.text_area :tag_list, class: "form-control" %>
+    </div><br>
+
+  <div class="field">
+    <h4 style="color:red;" <%= form.label :Image %></h4>
+    <%= form.file_field :images, multiple: true %>
+  </div><br>
+
+
+
+
+
+</br>
+
+
+
+
+
+
+
+
+
+
+  <div class="actions btn btn-primary btn-lg">
+    <%= form.submit %>
+  </div>
+<% end %>

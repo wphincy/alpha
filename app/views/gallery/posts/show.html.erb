@@ -1,0 +1,59 @@
+<% provide(:page_title, @post.title) %>
+
+
+<h4 style="color:yellow;" id="notice"><%= notice %></h4>
+
+<h2><%= link_to 'Back To Home', posts_path,class: 'btn btn-sm btn-primary' %></h2>
+
+
+
+<body background="https://s3-us-west-1.amazonaws.com/photogallery1/bk1.jpg">
+</body>
+
+
+
+<div class="row">
+  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
+      <div class="container text-white ">
+
+      <h1 style="color:yellow;" ><u><%= @post.title %></u></h1><br>
+      <h2><%= @post.description %></h2><br>
+    </div>
+
+
+
+    <div class="container">
+    <div class="row" col-sm-4>
+
+
+
+      <%  @post.images.each do |image| %>
+      <% if image.variable? %>
+
+
+
+
+        <ul class="enlarge">
+
+          <li>  <%= link_to image_tag(image.variant(resize: "250x200")), image %>
+
+
+
+             <span> <%= link_to image_tag(image), image %> <br /></li>
+              </ul>
+
+
+
+        <% end %>
+
+        <% end %>
+
+
+
+    </div>
+
+    </div>
+
+</div>
+
+</div>

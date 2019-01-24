@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+
+
+    <div class='container-fluid'>
+
+
+
+
+      <a class='navbar-brand' href='/' >
+
+        <img class="card-img-top" src="https://s3-us-west-1.amazonaws.com/photogallery1/logo1.jpg" style="width:80px;height:60px;" alt="Card image cap">
+
+
+       Laser<span class='light'>Space</span>
+
+      </a>
+
+      <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" > &#9776;
+
+                <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+
+
+
+
+
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+
+
+
+    <ul class="navbar-nav pull-sm-right pull-xs-right breadcrumb">
+
+
+      <li class="nav-item active">
+        <a class="nav-link" <%= link_to 'Home', root_path  %><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" <%= link_to 'Welcome', welcome_path  %></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" <%= link_to 'About', about_path  %></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" <%= link_to 'Contact', contact_path  %></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" <%= link_to 'Aerial Photos For Sale', photo_path  %></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" <%= link_to 'Aerial Videos', video_path  %></a>
+      </li>
+
+
+<% if author_signed_in? %>
+      <li class="nav-item">
+          <a class="nav-link" <%= link_to 'My Posts', authors_posts_path  %></a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" <%= link_to 'Logout', destroy_author_session_path, method: :delete %></a>
+      </li>
+
+	<% end %>
+  </ul>
+
+
+
+
+
+
+
+
+        </div>
+
+          </div>
+      </nav>

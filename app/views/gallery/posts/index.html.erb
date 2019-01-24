@@ -1,0 +1,175 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% provide(:page_title, 'All Posts') %>
+
+
+<h4 style="color:red;" id="notice"><%= notice %></h4>
+
+    <div class="jumbotron jumbotron-fluid">
+
+        <video autoplay  muted >
+            <source src="https://s3-us-west-1.amazonaws.com/photogallery1/Shelterjumbo" type="video/mp4">
+            </video>
+                <div class="container text-white">
+
+
+                  <body background="https://s3-us-west-1.amazonaws.com/photogallery1/bk1.jpg">
+                  </body>
+
+
+                  <center><h1 class="display-4" style="color:white;">Welcome To The HincyGallery!</h1></center>
+                    <br><br><br><br>
+                </div>
+      </div>
+<!-- /.container -->
+
+<!-- /.jumbotron -->
+
+
+
+<div class="row">
+<div>
+
+
+
+<br><br>
+
+  <h3 style="color:yellow;"><center><u>Listing Of Aerial Photographs</u></center></h3>
+      <br>
+
+
+
+      <table class="table table-striped" BORDER="10px solid red" CELLPADDING="1" >
+        <tr>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Catagory: </h5>
+          </th>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Name: </h5>
+          </th>
+
+
+
+
+          <th>
+            <h5 style="color:red; " colspan=5> Photographs: </h5>
+          </th>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Comments: </h5>
+          </th>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Keyword: </h5>
+          </th>
+
+          <th>
+            <h5 style="color:red; " colspan=5> Published: </h5>
+          </th>
+
+
+
+          </tr>
+
+
+
+          <%= render @posts %>
+
+
+
+
+
+      </table>
+
+
+      <br>
+
+  <div class="apple_pagination container text-white text-align:center;">
+        <%= will_paginate @posts, container: false %>
+      </div>
+
+
+      <br>
+      <br>
+
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background-color:#282828;">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold text-white" ><u>Contact:</u></h5>
+          <h6 style="color:yellow;"</h6>
+          <p> William P. Hincy
+          <p> 142 Avenue R-2   Palmdale   California   93550 </p>
+          <p> Email: <a href="mailto:hincybi@gmail.com">hincybi@gmail.com</a></p>
+          <p> Cell Phone: <a href="tel:661-878-2252"><span>661-878-2252</span></a>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold text-white"><u>Quotes:</u></h5>
+          <h6 style="color:yellow;" </h6>
+            <p> Lead me, follow me, or get the hell out of my way. </p>
+            <p> For most people the sky is the limit.....for a pilot the sky is home! </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white">© 2018 Copyright:
+      <p>  LaserSpace Technologies </p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->

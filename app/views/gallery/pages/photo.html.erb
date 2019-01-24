@@ -1,0 +1,262 @@
+<% provide(:contact_active, 'active') %>
+
+
+<div class="container text-white">
+
+
+<body background="https://s3-us-west-1.amazonaws.com/photogallery1/bk1.jpg">
+</body>
+
+<center><h1 style="color:yellow;">Hincy Gallery</h1></center>
+<br>
+<center><h1 style="color:yellow;">Photographs   <u>For Sale</U></h1></center>
+<br>
+
+<center><h4>Photographs by: William P. Hincy</h4></center>
+<br>
+<center><h4><u>Click</U> On Photograph</h4></center>
+
+</div>
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Lake+Mead1" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Lake+Tahoe1" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM1" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM2" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"><
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM3" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Catalina+Island" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Clouds1" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Clouds2" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM4" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Trinity+Lake1" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Lake+Mead1" width= "1100" heigth= "650">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Lake+Tahoe1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM2" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM3" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Catalina+Island" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Clouds1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Clouds2" style="width:100%" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM4" style="width:100%" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 of 10</div>
+      <img src="https://s3-us-west-1.amazonaws.com/photogallery1/Trinity+Lake1" style="width:100%" >
+    </div>
+
+
+
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://s3-us-west-1.amazonaws.com/photogallery1/Lake+Mead1" style="width:100%" onclick="currentSlide(1)" alt="Lake Mead">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://s3-us-west-1.amazonaws.com/photogallery1/Lake+Tahoe1" style="width:100%" onclick="currentSlide(2)" alt="Lake Tahoe">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM1" style="width:100%" onclick="currentSlide(3)" alt="Flying over of the San Gabriel Mountains at 10,500 feet.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://s3-us-west-1.amazonaws.com/photogallery1/SGM2" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+<br>
+<br>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background-color:black;">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold text-white" >Contact:</h5>
+          <h6 style="color:yellow;"</h6>
+          <p> William P. Hincy
+          <p> 142 Avenue R-2   Palmdale   California   93550 </p>
+          <p> Email: <a href="mailto:wphincy@outlook.com">wphincy@outlook.com</a></p>
+          <p> Cell Phone: <a href="tel:661-878-2252"><span>661-878-2252</span></a>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold text-white">Quotes:</h5>
+          <h6 style="color:yellow;" </h6>
+            <p> Lead me, follow me, or get the hell out of my way. </p>
+            <p> For most people the sky is the limit.....for a pilot the sky is home! </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white">© 2018 Copyright:
+      <p>  LaserSpace Technologies </p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->

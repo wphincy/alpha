@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <td><h5 style="color:white;"><%= post.catagory %></h5></td>
+  <td><h5 style="color:yellow;"><%= link_to post.title, authors_post_path(post) %></h5></td>
+
+  <td><h5 style="color:white;"><%= post.numphoto %> </h5></td>
+  <td><h5 style="color:white;"><%= post.comments %></h5></td>
+
+
+
+
+<td><h5 style="color:white;" class="published_date"><%= post.display_day_published %></h5></td>
+
+
+  <% if post.published? %>
+    <td><h5 style="color:yellow;"><%= link_to 'Unpublish', unpublish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-primary' %></h5></td>
+  <% else %>
+    <td><h5 style="color:yellow;"><%= link_to 'Publish', publish_authors_post_path(post), method: :put, class: 'btn btn-sm btn-warning' %></h5></td>
+  <% end %>
+
+
+
+
+
+
+
+
+  <td><%= link_to 'Edit', edit_authors_post_path(post), class: 'btn btn-sm btn-warning' %></td>
+
+
+
+  <td><%= link_to 'Remove', authors_post_path(post), method: :delete, data: {confirm: 'Are You Sure?'}, class: 'btn btn-sm btn-danger' %></td>
+
+
+  </tr>
